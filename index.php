@@ -42,19 +42,19 @@ include 'pie.php';
           <!-- Diapositivas-->
           <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/autos1.jpg" alt="Vehículo con familia"/>
+                    <img src="img/autos1.jpg" class="img-fluid" alt="Vehículo con familia"/>
                     <div class="carousel-caption">
                         <h3>Un plan pensado para vos <br>y la comodidad de los tuyos<br></h3>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/logo.jpg" alt="Entrega de llaves de vehículo"/>
+                    <img src="img/logo.jpg" class="img-fluid"  alt="Entrega de llaves de vehículo"/>
                     <div class="carousel-caption">
                         <h2>Con entrega inmediata<br> y todas las facilidades<br></h2>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/autos4.jpg" alt=" Variedades de vehículos"/>
+                    <img src="img/autos4.jpg" class="img-fluid" alt=" Variedades de vehículos"/>
                      <div class="carousel-caption">
                         <h3>Todas las variedades de <br>colores y modelos<br></h3>
                     </div>
