@@ -52,7 +52,7 @@
                        <div id="plan">
                            <a style="margin-top: 4px" href="plan.php?val=<?php echo ($vehiculo["monto"])?>&nombre=<?php echo ($respuesta["nombre"])?>/<?php echo ($respuesta["modelo"])?>" class="btn btn-primary rounded">Plan</a>                      </div>
                       </div>
-                       <img id=img_vehiculo src="img/<?php echo ($vehiculo["imagen"])?>" class="rounded"/>
+                       <img id=img_vehiculo src="img/<?php echo ($vehiculo["imagen"])?>" class="rounded class"img-fluid" "/>
                     </div>
                 
                 
