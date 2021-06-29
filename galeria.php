@@ -141,7 +141,7 @@ $lista_marcas= $db->query($sql);
                     foreach ($resultado as $row){?>
                 
                             <div id="div_galeria" class="col-md-3 mt-4" >
-                                <img src="img/<?php echo ($row["imagen"])?>" width="225px" height="120px" />
+                                <img src="img/<?php echo ($row["imagen"])?>" width="225px" height="120px" class"img-fluid"  />
                                 <p><h3>$ <?php echo ($row["monto"])?></h3></p>
                                 <a href="detalle.php?codigo=<?php echo $row["id_veh"]?>" class="btn btn-secondary rounded">Ver Detalle</a>
                             </div>
