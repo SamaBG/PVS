@@ -29,11 +29,10 @@
                 
                    <img id=link_logo src="img/logo.jpg" alt="logo del sitio" class="rounded-circle">
                 
-                  
-                 <button class="navbar-toggler" data-target="collapse" type="button">
+                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                 </button>
-                
+                   </button>
+                 
                 
                  <div class="collapse navbar-collapse" id="menu">
                     <ul class="navbar-nav mr-auto">
