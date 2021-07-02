@@ -29,7 +29,7 @@
        <link rel="shortcut icon" href="img/log_barra.jpg" type="image/x-icon"/>
        
        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-       <link href="css/estil.css" rel="stylesheet">
+       <link href="css/estils.css" rel="stylesheet">
        
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -43,23 +43,26 @@
         
         <div class="container" id="contenedor">
             <?php echo crear_barra(); ?>
-            <a  id="boton_volver" style="margin-top: 2px"  title="Volver" href="galeria.php" class="btn btn-primary rounded" >&laquo</a><br>
+            <a  id="boton_volver" style="margin-right: -55px"  title="Volver" href="galeria.php" class="btn btn-primary rounded" >&laquo</a><br>
             <div class="row">
-                <div class="col-md-6 mt-4">
+                <div class="col-md-6 mt-4 col-sm-12 col-lg-6">
                     
                
                     <div> 
+                       <img id=img_vehiculo src="img/<?php echo ($vehiculo["imagen"])?>" class="rounded img-fluid"/>
                        <div id="plan">
-                           <a style="margin-top: 4px" href="plan.php?val=<?php echo ($vehiculo["monto"])?>&nombre=<?php echo ($respuesta["nombre"])?>/<?php echo ($respuesta["modelo"])?>" class="btn btn-primary rounded">Plan</a>                      </div>
+                           <a style="margin-top: 4px" href="plan.php?val=<?php echo ($vehiculo["monto"])?>&nombre=<?php echo ($respuesta["nombre"])?>/<?php echo ($respuesta["modelo"])?>" class="btn btn-primary rounded">Plan</a>                   
+                       </div>
                       </div>
-                       <img id=img_vehiculo src="img/<?php echo ($vehiculo["imagen"])?>" class="rounded class"img-fluid" "/>
                     </div>
                 
                 
-                <div class="col-md-6 mt-4">
+                <div class="col-md-6 mt-4 col-sm-12 col-lg-6">
                     
-                    <h1 id=h1_marca><?php echo ($respuesta["nombre"])?>/<?php echo ($respuesta["modelo"])?></h1>
-                    <h1 id=h1_monto style="margin-left: 70px">$ <?php echo ($vehiculo["monto"])?></h1><br>
+                    <div id="marca_monto">
+                        <h1 id=h1_marca><?php echo ($respuesta["nombre"])?>/<?php echo ($respuesta["modelo"])?></h1>
+                        <h1 id=h1_monto style="margin-left: 70px">$ <?php echo ($vehiculo["monto"])?></h1><br>
+                    </div>
 
                     <div id=datos class="rounded" >
                         
