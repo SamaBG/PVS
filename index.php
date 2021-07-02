@@ -12,11 +12,14 @@ include 'pie.php';
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="img/log_barra.jpg" type="image/x-icon"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/estil.css" >
+        <link rel="stylesheet" href="css/estils.css" >
 
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+         
+        
+         
     </head>  
    
     
@@ -28,10 +31,11 @@ include 'pie.php';
         <div class="container" id="contenedor">
              <?php echo crear_barra(); ?>
             
-            <h1 style="font-family: inherit; color: #21618C">Plan vehículo Solidario</h1>
-        
-             <div class="carousel slide" data-ride="carousel">
-                
+            
+             <h1 style="font-family: inherit; color: #21618C" id="titulo">Plan vehiculo Solidario</h1>
+           
+        <div id="car" class="carousel slide" data-ride="carousel">
+
           <!-- Indicadores -->
           <ul class="carousel-indicators">
             <li data-target="#car" data-slide-to="0" class="active"></li>
@@ -41,27 +45,27 @@ include 'pie.php';
 
           <!-- Diapositivas-->
           <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/autos1.jpg" class="img-fluid" alt="Vehículo con familia"/>
-                    <div class="carousel-caption">
-                        <h3>Un plan pensado para vos <br>y la comodidad de los tuyos<br></h3>
+            <div class="carousel-item active">
+              <img src="img/autos1.jpg" alt="VehÃ­culo con familia" class="d-block w-100 img-fluid" >
+              <div class="carousel-caption">
+                  <h2 style="color: white">Un plan pensado para vos <br>y la comodidad de los tuyos<br></h2>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/logo.jpg" class="img-fluid"  alt="Entrega de llaves de vehículo"/>
-                    <div class="carousel-caption">
+            </div>
+            <div class="carousel-item">
+                <img src="img/logo.jpg" alt="Entrega de llaves de vehÃ­culo" class="d-block w-100 img-fluid" >
+              <div class="carousel-caption">
                         <h2>Con entrega inmediata<br> y todas las facilidades<br></h2>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/autos4.jpg" class="img-fluid" alt=" Variedades de vehículos"/>
-                     <div class="carousel-caption">
-                        <h3>Todas las variedades de <br>colores y modelos<br></h3>
+            </div>
+              <div class="carousel-item" >
+              <img src="img/autos4.jpg" alt=" Variedades de vehÃ­culos" class="d-block w-100 img-fluid" >
+              <div class="carousel-caption">
+                        <h2 style="color: white">Todas las variedades de <br>colores y modelos<br></h2>
                     </div>
-                </div>
+            </div>
           </div>
 
-          <!--Controles de izquierda y derecha -->
+          <!-- Controles de izquierda y derecha -->
           <a class="carousel-control-prev" href="#car" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
           </a>
@@ -69,8 +73,10 @@ include 'pie.php';
             <span class="carousel-control-next-icon"></span>
           </a>
         </div>
-       </div>
-        
+
+            
+           
+        </div>
         <footer>
            <?=pie()?>
 	</footer>
