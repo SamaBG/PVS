@@ -60,7 +60,7 @@ $lista_marcas= $db->query($sql);
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link rel="shortcut icon" href="img/log_barra.jpg" type="image/x-icon"/>
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-       <link rel="stylesheet" href="css/estil.css" >
+       <link rel="stylesheet" href="css/estils.css" >
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -76,11 +76,11 @@ $lista_marcas= $db->query($sql);
         
         <div  id="contenedor" class="container" >
             <?php echo crear_barra(); ?>
-            <a  id="boton_volver" style="margin-top: 2px"  title="Volver" href="index.php" class="btn btn-primary rounded" >&laquo</a>
+            <a  id="boton_volver" style="margin-right: -55px"  title="Volver" href="index.php" class="btn btn-primary rounded" >&laquo</a>
             <br><br> 
-            <div>
-                <form  name="datos" id="datos" method="post" action="galeria.php"> 
-                <fieldset id="fieldset" class="rounded" style="border:solid;;border-width: 1px;border-color: #ccc;width: 700px;margin-left: -120px;padding: 10px;padding-bottom:4px ">
+            <div id="filtro">
+                <form  name="datos" id="datos" method="post" action="galeria.php">    
+                <fieldset  class="rounded">
                             <h3>Opciones</h3>
                             
                             <span style="background-color: #F5F5F5" class="rounded">Ordenar por: </span>
@@ -95,10 +95,6 @@ $lista_marcas= $db->query($sql);
                                 
                             </select>
                            			
-                            
-                            
-                            
-                                
                             <select name="desdeMonto" id="desdeMonto" style="margin-left: 10px">
                                 
                                 <option value="0" >Monto desde:</option>
@@ -114,24 +110,20 @@ $lista_marcas= $db->query($sql);
                                 <option value="300000" >$ 300.000</option>
                                 
                             </select>
-                                
-                               
-				
-                                <input type="submit" id="Mostrar" name="Mostrar" value="Mostrar Listado" style="float:right;margin-bottom: 10px;margin-right:10px" class="btn btn-secondary active" onclick="return mensaje();">
+                            <input type="submit" id="Mostrar" name="Mostrar" value="Mostrar Listado" class="btn btn-secondary active" onclick="return mensaje();">
 			</fieldset>	
                   </form>
             </div>
-            <div>
+            <div id="detalle_filtro">
                 <?php 
                 $mensajeMarca=(!$marca=="")? $marca:"Todas las Marcas";
                 $mensajeMonto=(!$desdeMonto==0)? $desdeMonto:"00";
                 ?>
                 <p style="margin-left:4px">Marca:<?php echo $mensajeMarca;?> / Desde Monto:<?php echo $mensajeMonto;?></p>
-                
-                
-                
             </div>
-            <div class="row" style="border:solid; border-color: #cdcdcd; border-width: 1px; margin-left: 5px;margin-right: 5px;margin-top: -10px" class="rounded">
+            
+            
+            <div class="row rounded" id="row">
                 
       
                     <?php  
@@ -140,8 +132,8 @@ $lista_marcas= $db->query($sql);
                     else{
                     foreach ($resultado as $row){?>
                 
-                            <div id="div_galeria" class="col-md-3 mt-4" >
-                                <img src="img/<?php echo ($row["imagen"])?>" width="225px" height="120px" class"img-fluid"  />
+                            <div id="div_galeria" class="col-xl-3 col-lg-4 col-md-6 mt-4 col-sm-12" >
+                                <img src="img/<?php echo ($row["imagen"])?>"/>
                                 <p><h3>$ <?php echo ($row["monto"])?></h3></p>
                                 <a href="detalle.php?codigo=<?php echo $row["id_veh"]?>" class="btn btn-secondary rounded">Ver Detalle</a>
                             </div>
@@ -150,7 +142,7 @@ $lista_marcas= $db->query($sql);
                     ?>
                     
                     
-                </div>
+            </div>
            <div style=" height: 60px">
                <a  id="boton_volver" href="galeria.php" class="btn btn-primary rounded" style="background-color: #5a5858;border-color: #5a5858">&laquo; Volver a Galería</a>
            </div>
