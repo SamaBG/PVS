@@ -11,7 +11,7 @@ include ('pie.php');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="img/log_barra.jpg" type="image/x-icon"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="css/estil.css" rel="stylesheet">
+  <link href="css/estils.css" rel="stylesheet">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -29,7 +29,7 @@ include ('pie.php');
             <div id="divisor2">
                 <a   id="boton_volver" style="margin-top: 2px" title="Siguiente" href="consultas.php" class="btn btn-primary rounded">&raquo</a>  
                 <a  id="boton_volver" style="margin-right: 3px; margin-top: 2px" title="Anterior" href="caracteristicas.php" class="btn btn-primary rounded">&laquo</a> 
-                    <img src="img/logo.jpg" class="rounded-circle"/>
+                    <img src="img/logo.jpg" class="rounded-circle img-fluid" id="imgfondo"/>
                     <div class="sub_divisor" >
 			<h3> Pueden Acceder:</h3>
 			<p>
