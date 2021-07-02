@@ -11,15 +11,14 @@
       margin-top: 5px;
       margin-bottom: 5px;}
 
-  .navbar
-  {width:1145px;
-  margin-left: -5px;}
-      
- .nav-link
- {text-align: center;
-  margin-top: 4px;
+ 
+ #nav-link a
+ {margin-top: 4px;
   margin-right: 4px;
-  height: 48px;}
+ color:white;
+ height: 100%;
+ padding: 10px;
+ }
  
  #link_logo
  {margin-right: 10px;
@@ -30,8 +29,20 @@
   border-width: 2px;}
  
  #link1
-  {background-color: #20B2AA;}
+  {background-color: #20B2AA;
+  border-color: #20B2AA}
  
+  .carousel-inner img
+  {height: 500px;
+  padding: 20px;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+  
+  
+  
+  
  #boton_volver
 {float: right;
  margin-top: 2px;
@@ -73,18 +84,8 @@ border-color: #20B2AA;}
       .sub_divisor h3 
       {  color:gray;}
       
-      #divisor2 img
-      {margin-left: 350px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 300px;
-      height: 180px;}
       
-      .carousel-item  img 
-        {height: 450px;
-        width: 900px;
-        padding: 20px;
-        margin-left: 70px;}  
+      
         
       .carousel-caption h2,h3
       {font-family: gabriola}
@@ -92,7 +93,11 @@ border-color: #20B2AA;}
       .carousel-caption h2
       {color: black;}
      
-    
+    #imgfondo
+    {width: 30%;
+     height: 18%;
+     margin-left: 350px;
+    padding: 10px;}
     
     #div_galeria img
     {border:solid;
@@ -101,30 +106,50 @@ border-color: #20B2AA;}
      margin-top: 20px;
      margin-left: 12px;
      margin-bottom: 10px;
-     width:225px;
-     height:120px;}
+     width:90%;
+     height:45%;}
     
     #div_galeria h3
     {text-align: center;
      color: black;
      font-family: gabriola;}
     
+    #row
+    {border:solid;
+     border-color: #cdcdcd;
+     border-width: 1px;
+     margin-left: 5px;
+     margin-right: 5px;
+     margin-top: -10px;}
+    
     #div_galeria a
     {background-color: #20B2AA;
      border-color: #20B2AA;
-     width: 200px;
+     width: 85%;
      margin-left: 18px;
      margin-bottom: 10px;}
     
-    #img_vehiculo
-    {height: 400px;
-      width: 650px;
-    margin-bottom: 5px;
-    margin-left: -10px;}
+    #filtro fieldset
+    {border:solid;
+     border-width: 1px;
+     border-color: #ccc;
+     width: 120%;
+     margin-left: -120px;
+     padding: 10px;
+     padding-bottom:4px;}
     
-    #plan
-    {position:absolute;
-     margin-top: -50px;}
+    #Mostrar
+    {float:right; 
+     margin-bottom: 10px;
+     margin-right:10px;}
+    
+    #img_vehiculo
+    {height: 150%;
+      width: 300%;
+    margin-bottom: 5px;
+    margin-left: 25px;}
+    
+    
     
     #plan a
     {background-color: #20B2AA;
@@ -133,36 +158,53 @@ border-color: #20B2AA;}
      margin-left: 430px;
     margin-top: 2px;}
     
+    #marca_monto
+    {width: 75%;
+     margin-left: 100px;}
+    
     #h1_marca, #h1_monto
     {text-align: center;
      font-family: serif;
      color: dimgray;}
     
-    #h1_marca
-    {padding-left: 80px;}
+    #h1_monto
+    {padding-right: 80px;}
     
     #datos
     {padding: 10px;
      border:solid;
      border-color:white ;
-     width: 350px;
+     width: 75%;
      border-top-color: #F5F5F5;
      border-bottom-color: #F5F5F5;
      margin-top: -10px;
      border-width: 2px;
-     margin-left: 120px;}
+     margin-left: 100px;}
     
     #datos h5
     {text-align:center;
      font-family: serif;
      color: black;}
     
+    #detalles_vehiculo h2
+    {margin-left: 350px;
+     margin-top: -60px;
+     font-family: inherit;
+    text-align: center;}
+    
+    #detalles_vehiculo h3,p
+    {text-align: left; 
+     font-family: inherit;}
+    
+    #detalles_vehiculo p
+    {color: gray;}
+    
     #div_comentario
     {background-color: #F5F5F5;
      border-width: 1px;
      margin-bottom: 10px;
-     width: 350px;
-     margin-left: 120px;
+     width: 75%;
+     margin-left: 100px;
      margin-top: 10px;}
     
     #div_comentario p
@@ -181,6 +223,9 @@ border-color: #20B2AA;}
       margin-right: 10px;
       margin-bottom:20px;
       margin-left: 10px; }
+    
+    #tabla_plan
+    {width: 100%;}
     
     #tabla_plan thead
     {color:gray;}
@@ -264,6 +309,23 @@ border-color: #20B2AA;}
     #fieldset_form legend
     {color:#ccc;}
     
+    #boton_sesion
+    {margin-left: 410px;
+     margin-top: -95px;
+     border:solid;
+     border-color: #20B2AA;
+     background-color: #20B2AA}
+    
+    #error
+    {width: 100%;
+     height: 80%}
+    
+    #error p
+    {color:red;
+     font-size: 20px;
+     margin-top: -25px;
+    margin-left: 20px;}
+    
       #pie 
       {clear:both;
        background-color:#5a5858;
@@ -274,6 +336,124 @@ border-color: #20B2AA;}
        font-size: .9em;}
 		
       #pie a { color:#ffffff;}
+      
+                
+
+                @media only screen and (max-width:960px)and (min-width: 801px)
+                {#imgfondo{margin-left: 100px;}
+                 
+                 #detalles_vehiculo h2,h3,p{margin-left: 20px;
+                 margin-top: 10px;}
+                 #detalles_vehiculo h2{font-size: 24px;}
+                 #img_vehiculo{ margin-left: 1px;}
+                 #marca_monto{margin-left: 0px;
+                  width: 100%;}
+                 #h1_marca, #h1_monto{font-size: 24px;}
+                 #datos{margin-left: 0px;
+                 font-size: 18px;
+                 width: 100%;}
+                 #div_comentario{margin-left: 0px;
+                 font-size: 12px;
+                 width: 100%;}
+                 #plan a{width: 80%;
+                 margin-left: 28px;
+                 margin-top: 30px;
+                 margin-bottom: 5px;}
+                 
+                 #filtro
+                 {width: 80%}
+                #nav-link a{width: 70%;
+                 text-align: left;}
+                 .carousel-inner img
+                {height: 400px;}
+                 #boton_sesion{margin-left: 0px;
+                 float: right;
+                 margin-top: 10px;
+                 margin-bottom: 5px;}
+                  #error p{font-size: 18px;
+                 margin-top: -20px;}
+                }
 
 
-
+                @media only screen and (max-width:800px)and (min-width: 401px)
+                {.container{width: 100%}
+                #imgfondo{margin-left: 150px;}
+                 .carousel-caption h2{font-size: 24px;}
+                 
+                 #detalles_vehiculo h2,h3,p{margin-left: 20px;
+                 margin-top: 10px;}
+                 #detalles_vehiculo h2{font-size: 24px;}
+                 #img_vehiculo{ margin-left: 1px;}
+                 #marca_monto{margin-left: 0px;
+                  width: 100%;}
+                 #h1_marca, #h1_monto{font-size: 24px;}
+                 #datos{margin-left: 0px;
+                 font-size: 18px;
+                 width: 100%;}
+                 #div_comentario{margin-left: 0px;
+                 font-size: 12px;
+                 width: 100%;}
+                 #plan a{width: 80%;
+                 margin-left: 28px;
+                 margin-top: 30px;
+                 margin-bottom: 5px;}
+                 
+                 #titulo{font-size: 20px;}
+                 #filtro{display: none;}
+                 #detalle_filtro{display: none;}
+                 #nav-link a{width: 70%;
+                 text-align: left;}
+                 .carousel-inner img
+                 {height: 300px;
+                 padding: 0px;}
+                 #error p{font-size: 18px;
+                 margin-top: -20px;
+                 }
+                 #boton_sesion{margin-left: 0px;
+                 float: right;
+                 margin-top: 10px;
+                 margin-bottom: 5px;}
+  
+                }
+              
+               @media only screen and (max-width:400px)and (min-width: 200px)
+               {.container{width: 100%;}
+               #imgfondo{margin-left: 30px;}
+               .carousel-caption h2{font-size: 12px;}
+                 #titulo{font-size: 10px;}
+                 #filtro{display: none;}
+                 #row{margin-top: 5px;}
+                 #detalle_filtro{display: none;}
+                 #detalles_vehiculo h2,h3,p{margin-left: 20px;
+                 margin-top: 10px;}
+                 #detalles_vehiculo h2{font-size: 24px;}
+                 #img_vehiculo{ margin-left: 1px;}
+                 #marca_monto{margin-left: 0px;
+                  width: 100%;}
+                 #h1_marca, #h1_monto{font-size: 24px;}
+                 #datos{margin-left: 0px;
+                 font-size: 18px;
+                 width: 100%;}
+                 #div_comentario{margin-left: 0px;
+                 font-size: 12px;
+                 width: 100%;}
+                 #plan a{width: 80%;
+                 margin-left: 28px;
+                 margin-top: 30px;
+                 margin-bottom: 5px;}
+                 #nav-link a{width: 70%;
+                 text-align: left;}
+                 .carousel-inner img
+                 {height: 150px;
+                 padding: 0px;}
+                 #boton_sesion{margin-left: 0px;
+                 float: right;
+                 margin-top: 10px;
+                 margin-bottom: 5px;}
+                
+                 #error p{font-size: 12px;
+                 margin-top: -20px;
+                 }
+  
+               }
+               
