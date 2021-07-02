@@ -23,36 +23,37 @@
    
    function menu(){
        global $menu1,$perfil;
-       $menu='<div class="container">
-            <nav style="width: 1110px; margin-left: 0px" class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+       $menu='<div class="container"> 
+                 <nav style="margin-left: 0px" class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
                 
                 
                    <img id=link_logo src="img/logo.jpg" alt="logo del sitio" class="rounded-circle">
                 
-                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                  
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#barra"  aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                    </button>
-                 
                 
-                 <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a href="index.php" id=link1 title="Inicio del Sitio" class="nav-link btn-secondary rounded">Plan Vehículo Solidario</a>
+                
+                 <div class="collapse navbar-collapse" id="barra">
+                    <ul class="nav navbar-nav" id="nav-link">
+                        <li>
+                            <a href="index.php" id=link1 title="Inicio del Sitio" class="btn btn-sm btn-outline-secondary">Plan Vehículo Solidario</a>
                         </li>
-                        <li class="nav-item active">
-                            <a href="leyenda.php" title"Leyenda" class="nav-link btn-secondary rounded" >Leyenda</a>
+                        <li>
+                            <a href="leyenda.php" title="Leyenda" class="btn btn-sm btn-outline-secondary">Leyenda</a>
                         </li>
-                        <li class="nav-item active">
-                            <a href="caracteristicas.php" title="Caracteristicas" class="nav-link btn-secondary rounded">Características</a>
+                        <li>
+                            <a href="caracteristicas.php" title="Caracteristicas" class="btn btn-sm btn-outline-secondary">Características</a>
                         </li>
-                        <li class="nav-item active">
-                            <a href="beneficiarios.php" title="Beneficiarios" class="nav-link btn-secondary rounded">Beneficiarios</a>
+                        <li>
+                            <a href="beneficiarios.php" title="Beneficiarios" class="btn btn-sm btn-outline-secondary">Beneficiarios</a>
                         </li>
-                        <li class="nav-item active">
-                            <a href="consultas.php" title="Consultas" class="nav-link  btn-secondary rounded">Consultas</a>
+                        <li>
+                            <a href="consultas.php" title="Consultas" class="btn btn-sm btn-outline-secondary">Consultas</a>
                         </li>
-                        <li class="nav-item dropdown active">
-                            <a href="galeria.php" title="Galería" class="nav-link btn-secondary rounded">Galería</h4></a>
+                        <li>
+                            <a href="galeria.php" title="Galería" class="btn btn-sm btn-outline-secondary">Galería</a>
                         </li>
                         
                     </ul>
