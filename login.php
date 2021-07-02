@@ -24,7 +24,7 @@ $error=$_GET["error"];
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link href="css/estil.css" rel="stylesheet">
+        <link href="css/estils.css" rel="stylesheet">
   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -65,15 +65,15 @@ $error=$_GET["error"];
 			<legend>Datos</legend>
 			
 			<div class="form-group row">
-				<label for="legajo" class="col-sm-1 col-form-label">Usuario</label>
-				<div class="col-sm-3">
+                            <label for="legajo" class="col-sm-12 col-md-12 col-lg-1 col-form-label">Usuario</label>
+				<div class="col-sm-6 col-md-6 col-lg-3">
 				<input type="text" class="form-control" name="legajo" id="legajo" value="" maxlength="8" required>
 				</div>
 
 			</div>
 			<div class="form-group row">
-				<label for="psw" class="col-sm-1 col-form-label">Contraseña</label>
-				<div class="col-sm-3">
+                            <label for="psw" class="col-sm-12 col-md-12 col-lg-1 col-form-label">Contraseña</label>
+				<div class="col-sm-6 col-md-6 col-lg-3">
 				<input type="password" class="form-control" name="psw" id="psw" value="" maxlength="20"  aria-describedby="pswAyuda" placeholder="Ingresar contraseña"  required>
 				</div>
 				
@@ -81,15 +81,15 @@ $error=$_GET["error"];
                         
                         <?php if ($error=='true'){?>
                         
-                        <div style="width: 380px;height: 60px" class="rounded" >
+                        <div id="error" class="rounded" >
                             <img src="img/error.png" style="width: 20px;height: 20px;margin-left: -5px"/>
-                            <h3 style="color:red;text-align: right;margin-top: -35px">El usuario y/o contraseña no son validos!</h3>
+                            <p>El usuario y/o contraseña no son validos!</p>
                        </div>
                         
                         <?php }?>
 
 			<div class="form-group">
-                            <input style="margin-left: 410px;margin-top: -95px;border:solid;border-color: #20B2AA;background-color: #20B2AA"type="submit" class="btn btn-primary" name="iniciar" value="Iniciar Sesión">
+                            <input id="boton_sesion" type="submit" class="btn btn-primary" name="iniciar" value="Iniciar Sesión">
 			</div>
 			
 			</fieldset>
